@@ -5,7 +5,7 @@ const features = [
   {
     icon: Users,
     title: 'Student-Led Care',
-    desc: 'Each child is assigned to a Conard High School student as their primary caregiver, creating meaningful mentorship bonds.',
+    desc: "Each child is assigned to a Conard High School student as their primary caregiver, creating meaningful mentorship bonds.",
     color: 'bg-brand-coral/10 text-brand-coral',
   },
   {
@@ -17,25 +17,25 @@ const features = [
   {
     icon: Heart,
     title: 'Small Class Sizes',
-    desc: 'Limited to 20 children to ensure each child gets adequate individual and cooperative experiences every day.',
+    desc: "Limited to 20 children to ensure each child gets adequate individual and cooperative experiences every day.",
     color: 'bg-brand-yellow/20 text-brand-warm',
   },
   {
     icon: Leaf,
     title: 'Outdoor Play',
-    desc: 'A large, enclosed courtyard provides safe outdoor play — essential for healthy physical and social development.',
+    desc: "A large, enclosed courtyard provides safe outdoor play — essential for healthy physical and social development.",
     color: 'bg-brand-teal/10 text-brand-teal',
   },
   {
     icon: Star,
     title: 'Enriching Spaces',
-    desc: 'Classroom areas include Dramatic Play, Book Nook, Writing & Art Center — all designed to spark curiosity.',
+    desc: "Classroom areas include Dramatic Play, Book Nook, Writing & Art Center — all designed to spark curiosity.",
     color: 'bg-brand-orange/10 text-brand-orange',
   },
   {
     icon: Eye,
     title: 'Observation Room',
-    desc: 'Parents and student-teachers can observe learning styles and interactions from a dedicated observation room.',
+    desc: "Parents and student-teachers can observe learning styles and interactions from a dedicated observation room.",
     color: 'bg-brand-navyLight/10 text-brand-navyLight',
   },
 ]
