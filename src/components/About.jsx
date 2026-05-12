@@ -10,9 +10,9 @@ const features = [
   },
   {
     icon: BookOpen,
-    title: 'Kindergarten Ready',
+    title: "Kindergarten Ready",
     desc: "Our curriculum is developmentally appropriate and aligned with West Hartford's expectations for Kindergarten readiness.",
-    color: 'bg-brand-green/10 text-brand-green',
+    color: "bg-brand-green/10 text-brand-green",
   },
   {
     icon: Heart,
