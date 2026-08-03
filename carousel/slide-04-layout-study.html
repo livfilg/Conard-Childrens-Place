@@ -1,0 +1,157 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Same page. Two crests. — layout study</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+  :root{
+    --paper:#EFE9DE;
+    --ink:#17150F;
+    --muted:#6F675B;
+    --maroon:#7A2E2A;
+    --hair:rgba(23,21,15,.15);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;
+    padding:56px 76px 44px;overflow:hidden;
+  }
+
+  /* ---------------- masthead ---------------- */
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--maroon);
+  }
+  h1{
+    font-family:'Instrument Serif',serif;font-weight:400;
+    font-size:62px;line-height:.96;letter-spacing:-.015em;margin-top:14px;
+  }
+  h1 em{font-style:italic;color:var(--maroon)}
+  .sub{margin-top:14px;max-width:952px;font-size:18px;line-height:1.5;color:var(--muted)}
+  .rule{height:1px;background:var(--hair);margin-top:20px}
+
+  /* ---------------- plates ---------------- */
+  .plates{display:grid;grid-template-columns:1fr 1fr;gap:52px;margin-top:22px}
+  .shot{
+    position:relative;width:100%;aspect-ratio:960/1243;overflow:hidden;background:#fff;
+    box-shadow:0 1px 0 rgba(23,21,15,.16), 0 16px 30px -20px rgba(23,21,15,.55);
+  }
+  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .ov{position:absolute;inset:0;pointer-events:none}
+
+  .axis{position:absolute;left:50%;top:0;bottom:0;width:1px;
+    background:repeating-linear-gradient(to bottom,rgba(23,21,15,.34) 0 4px,transparent 4px 10px);}
+  .bbox{position:absolute;border:1px solid var(--maroon);}
+  .gap{position:absolute;background:rgba(122,46,42,.14);
+    border-top:1px dashed rgba(122,46,42,.55);border-bottom:1px solid rgba(23,21,15,.42);}
+  .widest{position:absolute;height:1px;background:var(--maroon)}
+  .widest span{
+    position:absolute;left:100%;margin-left:7px;top:50%;transform:translateY(-50%);
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;
+    letter-spacing:.1em;color:var(--maroon);white-space:nowrap;
+    background:rgba(252,250,245,.78);padding:2px 4px;
+  }
+  .widest i{position:absolute;left:-4px;top:-2.5px;width:6px;height:6px;border-radius:50%;background:var(--maroon)}
+
+  /* ---------------- captions + data ---------------- */
+  .cap{display:flex;align-items:baseline;gap:10px;margin-top:16px}
+  .cap .n{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;color:var(--maroon);letter-spacing:.06em}
+  .cap .t{font-size:15px;font-weight:600;letter-spacing:.15em;text-transform:uppercase}
+  .cap .y{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.04em}
+  table{width:100%;border-collapse:collapse;margin-top:10px}
+  td{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.03em;
+     padding:4.5px 0;border-top:1px solid var(--hair);color:var(--muted)}
+  td.v{text-align:right;color:var(--ink);font-weight:500}
+  tr.hi td.v{color:var(--maroon)}
+
+  /* ---------------- findings ---------------- */
+  .findings{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
+    margin-top:26px;padding-top:22px;border-top:1px solid var(--hair)}
+  .fn{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;color:var(--maroon);letter-spacing:.18em}
+  .f h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:24px;line-height:1.1;margin:8px 0 7px}
+  .f p{font-size:13.5px;line-height:1.45;color:var(--muted)}
+
+  .foot{margin-top:auto;padding-top:12px;border-top:1px solid var(--hair);
+    display:flex;justify-content:space-between;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;
+    color:rgba(111,103,91,.9);text-transform:uppercase}
+</style></head>
+<body>
+
+  <div class="eyebrow">04 &nbsp;/&nbsp; Layout study</div>
+  <h1>Same page.<br>Two <em>crests.</em></h1>
+  <p class="sub">Both covers straightened from the original photographs and scaled to equal page width. The layout holds still — what moves is how much of the column each crest occupies, and where its weight comes to rest.</p>
+  <div class="rule"></div>
+
+  <div class="plates">
+
+    <!-- ============ 01 · EXISTING ============ -->
+    <div>
+      <div class="shot">
+        <img src="assets/cover-existing.jpg" alt="The existing school crest on the commencement programme cover">
+        <div class="ov">
+          <div class="axis"></div>
+          <div class="bbox"   style="left:30.8%;right:28.4%;top:20.0%;bottom:24.1%"></div>
+          <div class="gap"    style="left:30.8%;right:28.4%;top:75.9%;height:2.54%"></div>
+          <div class="widest" style="left:30.8%;right:28.4%;top:44.8%"><i></i><span>WIDEST · 44%</span></div>
+        </div>
+      </div>
+      <div class="cap"><span class="n">01</span><span class="t">Existing crest</span><span class="y">in use</span></div>
+      <table>
+        <tr><td>Width</td><td class="v">0.43 × page</td></tr>
+        <tr><td>Height</td><td class="v">0.77 × page</td></tr>
+        <tr><td>Proportion</td><td class="v">1 : 1.77</td></tr>
+        <tr class="hi"><td>Widest point</td><td class="v">44% down</td></tr>
+        <tr class="hi"><td>Gap to closing line</td><td class="v">3.6% page</td></tr>
+      </table>
+    </div>
+
+    <!-- ============ 02 · NEW ============ -->
+    <div>
+      <div class="shot">
+        <img src="assets/cover-new.jpg" alt="The redrawn crest on the same commencement programme cover">
+        <div class="ov">
+          <div class="axis"></div>
+          <div class="bbox"   style="left:30.9%;right:30.3%;top:21.8%;bottom:14.2%"></div>
+          <div class="gap"    style="left:30.9%;right:30.3%;top:85.8%;height:0.28%"></div>
+          <div class="widest" style="left:30.9%;right:30.3%;top:70.7%"><i></i><span>WIDEST · 76%</span></div>
+        </div>
+      </div>
+      <div class="cap"><span class="n">02</span><span class="t">New crest</span><span class="y">redrawn</span></div>
+      <table>
+        <tr><td>Width</td><td class="v">0.41 × page</td></tr>
+        <tr><td>Height</td><td class="v">0.88 × page</td></tr>
+        <tr><td>Proportion</td><td class="v">1 : 2.14</td></tr>
+        <tr class="hi"><td>Widest point</td><td class="v">76% down</td></tr>
+        <tr class="hi"><td>Gap to closing line</td><td class="v">0.3% page</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="findings">
+    <div class="f">
+      <div class="fn">01</div>
+      <h3>Same width,<br>more height</h3>
+      <p>Within 5% of the same width, the new mark stands 15% taller. It fills the column where the old one filled a block.</p>
+    </div>
+    <div class="f">
+      <div class="fn">02</div>
+      <h3>The weight<br>drops</h3>
+      <p>The old crest is widest 44% down; the new one 76% down. The mass leaves the optical centre and settles on the base.</p>
+    </div>
+    <div class="f">
+      <div class="fn">03</div>
+      <h3>The lower<br>gap closes</h3>
+      <p>Clearance above the closing line falls from 3.6% of page width to 0.3%. Base and script now share one band.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Conard High School · 69th Commencement Programme</span>
+    <span>Equal scale · common crop window</span>
+  </div>
+
+</body></html>
